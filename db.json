@@ -1,0 +1,145 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"email": "test@test.com",
+			"password": "111111"
+		}
+	],
+	"maps": [
+		{
+			"lat": 39.92986950239143,
+			"long": -0.031855884008109576
+		},
+		{
+			"lat": 39.94290551707725,
+			"long": -0.06471971282735468
+		},
+		{
+			"lat": 39.9668115159552,
+			"long": -0.054064700379967696
+		}
+	],
+	"posts": [
+		{
+			"id": 1,
+			"title": "Title1",
+			"url": "https://placekitten.com/800/800?image=1",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 2,
+			"title": "Title2",
+			"url": "https://placekitten.com/800/800?image=2",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 3,
+			"title": "Title3",
+			"url": "https://placekitten.com/800/800?image=3",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 4,
+			"title": "Title4",
+			"url": "https://placekitten.com/800/800?image=4",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 5,
+			"title": "Title5",
+			"url": "https://placekitten.com/800/800?image=5",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 6,
+			"title": "Title6",
+			"url": "https://placekitten.com/800/800?image=6",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 7,
+			"title": "Title7",
+			"url": "https://placekitten.com/800/800?image=7",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 8,
+			"title": "Title8",
+			"url": "https://placekitten.com/800/800?image=8",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 9,
+			"title": "Title9",
+			"url": "https://placekitten.com/800/800?image=9",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 10,
+			"title": "Title10",
+			"url": "https://placekitten.com/800/800?image=10",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 11,
+			"title": "Title11",
+			"url": "https://placekitten.com/800/800?image=11",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 12,
+			"title": "Title12",
+			"url": "https://placekitten.com/800/800?image=12",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 13,
+			"title": "Title13",
+			"url": "https://placekitten.com/800/800?image=13",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 14,
+			"title": "Title14",
+			"url": "https://placekitten.com/800/800?image=14",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 15,
+			"title": "Title15",
+			"url": "https://placekitten.com/800/800?image=15",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 16,
+			"title": "Title16",
+			"url": "https://placekitten.com/800/800?image=16",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 17,
+			"title": "Title17",
+			"url": "https://placekitten.com/800/800?image=17",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 18,
+			"title": "Title18",
+			"url": "https://placekitten.com/800/800?image=18",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 19,
+			"title": "Title19",
+			"url": "https://placekitten.com/800/800?image=19",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		},
+		{
+			"id": 20,
+			"title": "Title20",
+			"url": "https://placekitten.com/800/800?image=20",
+			"description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+		}
+	]
+}

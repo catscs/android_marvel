@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/heroListFragment">
+
+    <fragment
+        android:id="@+id/heroListFragment"
+        android:name="es.webandroid.marvel.presentation.list.HeroListFragment"
+        android:label="List heroes">
+        <action
+            android:id="@+id/navigation_to_heroDetailFragment"
+            app:destination="@id/heroDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroDetailFragment"
+        android:name="es.webandroid.marvel.presentation.detail.HeroDetailFragment"
+        android:label="Detail">
+
+        <argument
+            android:name="heroId"
+            app:argType="long" />
+    </fragment>
+</navigation>
