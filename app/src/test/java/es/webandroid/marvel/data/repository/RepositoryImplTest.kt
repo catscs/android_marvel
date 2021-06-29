@@ -2,6 +2,8 @@ package es.webandroid.marvel.data.repository
 
 import es.webandroid.marvel.core.functional.Either
 import es.webandroid.marvel.core.functional.getOrElse
+import es.webandroid.marvel.data.model.HeroDataModel
+import es.webandroid.marvel.data.model.HeroMapper
 import es.webandroid.marvel.data.source.LocalDataSource
 import es.webandroid.marvel.data.source.RemoteDataSource
 import es.webandroid.marvel.domain.entities.Hero
@@ -20,13 +22,13 @@ class RepositoryImplTest {
 
     @Before
     fun setup() {
-        sut = RepositoryImpl(remoteDataSource, localDataSource)
+        sut = RepositoryImpl(remoteDataSource, localDataSource, HeroMapper())
     }
 
     @Test
     fun `when hasInternet is true then get heroes from remote and save data local`() {
         // Prepare
-        val heroList = listOf(Hero(12, "name", "description", "urlPortrait", "urlLandsCape"))
+        val heroList = listOf(HeroDataModel(12, "name", "description", "urlPortrait", "urlLandsCape"))
         coEvery { remoteDataSource.getHeroes(any(), any()) } returns Either.Right(heroList)
         coEvery { localDataSource.clearData() } returns Unit
         coEvery { localDataSource.saveHeroes(heroList) } returns Unit
@@ -43,8 +45,9 @@ class RepositoryImplTest {
     @Test
     fun `when hasInternet is false then get heroes from local`() {
         // Prepare
+        val heroDataList = listOf(HeroDataModel(12, "name", "description", "urlPortrait", "urlLandsCape"))
         val heroList = listOf(Hero(12, "name", "description", "urlPortrait", "urlLandsCape"))
-        coEvery { localDataSource.getHeroes() } returns heroList
+        coEvery { localDataSource.getHeroes() } returns heroDataList
         // Result
         val result = runBlocking { sut.getHeroes(0, 13, false) }
         // Check
@@ -68,7 +71,8 @@ class RepositoryImplTest {
     fun `when hasInternet is true then get hero from remote`() {
         // Prepare
         val hero = Hero(12, "name", "description", "urlPortrait", "urlLandsCape")
-        coEvery { remoteDataSource.getHeroDetail(any()) } returns Either.Right(hero)
+        val heroDataModel = HeroDataModel(12, "name", "description", "urlPortrait", "urlLandsCape")
+        coEvery { remoteDataSource.getHeroDetail(any()) } returns Either.Right(heroDataModel)
         // Result
         val result = runBlocking { sut.getHeroDetail(12, true) }
         // Check
@@ -79,8 +83,9 @@ class RepositoryImplTest {
     @Test
     fun `when hasInternet is false then get hero from local`() {
         // Prepare
+        val heroData = HeroDataModel(12, "name", "description", "urlPortrait", "urlLandsCape")
         val hero = Hero(12, "name", "description", "urlPortrait", "urlLandsCape")
-        coEvery { localDataSource.findById(any()) } returns hero
+        coEvery { localDataSource.findById(any()) } returns heroData
         // Result
         val result = runBlocking { sut.getHeroDetail(12, false) }
         // Check
