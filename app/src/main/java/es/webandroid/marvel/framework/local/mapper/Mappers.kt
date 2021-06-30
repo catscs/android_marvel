@@ -1,6 +1,7 @@
-package es.webandroid.marvel.framework.local.model
+package es.webandroid.marvel.framework.local.mapper
 
 import es.webandroid.marvel.data.model.HeroDataModel
+import es.webandroid.marvel.framework.local.model.HeroModel
 
 fun HeroDataModel.toRoomHero(): HeroModel =
     HeroModel(

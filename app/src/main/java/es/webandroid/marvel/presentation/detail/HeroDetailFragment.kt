@@ -33,8 +33,12 @@ class HeroDetailFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.getHeroDetail(args.heroId)
+        if (savedInstanceState == null) {
+            viewModel.getHeroDetail(args.heroId)
+        }
+
         viewModel.event.observe(viewLifecycleOwner, Observer(::updateUi))
+        viewModel.failure.observe(viewLifecycleOwner, Observer(::handleFailure))
     }
 
     private fun updateUi(event: Event) {

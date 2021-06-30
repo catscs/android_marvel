@@ -2,7 +2,6 @@ package es.webandroid.marvel.framework.remote.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import java.util.*
 
 @JsonClass(generateAdapter = true)
 data class HeroResponseData(

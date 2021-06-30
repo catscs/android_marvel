@@ -1,5 +1,6 @@
-package es.webandroid.marvel.data.model
+package es.webandroid.marvel.data.mapper
 
+import es.webandroid.marvel.data.model.HeroDataModel
 import es.webandroid.marvel.domain.entities.Hero
 
 interface MapperTo<in T, out R> {

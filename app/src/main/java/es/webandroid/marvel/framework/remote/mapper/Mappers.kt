@@ -1,4 +1,4 @@
-package es.webandroid.marvel.framework.remote
+package es.webandroid.marvel.framework.remote.mapper
 
 import es.webandroid.marvel.data.model.HeroDataModel
 import es.webandroid.marvel.framework.remote.model.HeroResponseData

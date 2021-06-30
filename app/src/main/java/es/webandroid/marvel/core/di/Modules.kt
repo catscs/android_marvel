@@ -7,7 +7,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import es.webandroid.marvel.core.connectivity.base.ConnectivityProvider
-import es.webandroid.marvel.data.model.HeroMapper
+import es.webandroid.marvel.data.mapper.HeroMapper
 import es.webandroid.marvel.data.repository.RepositoryImpl
 import es.webandroid.marvel.data.source.LocalDataSource
 import es.webandroid.marvel.data.source.RemoteDataSource
@@ -18,6 +18,7 @@ import es.webandroid.marvel.framework.local.RoomDataSource
 import es.webandroid.marvel.framework.local.base.HeroDao
 import es.webandroid.marvel.framework.local.base.HeroDatabase
 import es.webandroid.marvel.framework.remote.*
+import es.webandroid.marvel.framework.remote.mapper.HeroDataMapper
 import javax.inject.Singleton
 
 

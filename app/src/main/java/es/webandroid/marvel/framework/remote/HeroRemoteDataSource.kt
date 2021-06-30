@@ -6,6 +6,7 @@ import es.webandroid.marvel.core.error_handling.Failure.NetworkError.Recoverable
 import es.webandroid.marvel.core.functional.Either
 import es.webandroid.marvel.data.model.HeroDataModel
 import es.webandroid.marvel.data.source.RemoteDataSource
+import es.webandroid.marvel.framework.remote.mapper.HeroDataMapper
 import es.webandroid.marvel.framework.remote.model.HeroResponseData
 import kotlinx.coroutines.Dispatchers
 import retrofit2.Response

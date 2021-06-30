@@ -3,8 +3,8 @@ package es.webandroid.marvel.data.repository
 import es.webandroid.marvel.core.error_handling.Failure
 import es.webandroid.marvel.core.functional.Either
 import es.webandroid.marvel.core.functional.getOrElse
+import es.webandroid.marvel.data.mapper.HeroMapper
 import es.webandroid.marvel.data.model.HeroDataModel
-import es.webandroid.marvel.data.model.HeroMapper
 import es.webandroid.marvel.data.source.LocalDataSource
 import es.webandroid.marvel.data.source.RemoteDataSource
 import es.webandroid.marvel.domain.entities.Hero
